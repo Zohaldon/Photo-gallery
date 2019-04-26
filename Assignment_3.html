@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel=icon href="img/ImageGallery.png" sizes="16x16" type="images/png">
+        <title>Photo Gallery</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Parth Chandgadhiya">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <!--Left Part-->
+            <div id="fav_container">
+                <h1 id="fav_text">
+                    <i class="material-icons">&#10084;</i> 
+                        Favorite 
+                    <i class="material-icons">&#10084;</i> 
+                </h1>
+                <hr>
+                <div class="favorite_img" id="favorite_imgs">
+                    <!--Add image here-->
+                </div>
+                
+            </div>
+            <!--Right Part-->
+            <div id="gallery_container">
+                <div id="webpage_title">
+                    <p>Photo Gallery</p>
+                </div>
+                <!--Modal-->
+                <div id="myModal" class="modal">
+                    <span class="add_to_fav" id="add_to_fav" data-id="" onclick="addImgToDiv(this)">&#9733;</span>
+                    <span class="remove_fav" id="remove_fav" data-id="" onclick="removeImgFromDiv(this)">&#9734;</span>
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="imgForModal">
+                    <div id="caption"></div>
+                </div>
+                <!--modal over-->
+                <div class="slides_fade">
+                    <div class="image_number">1 / 10</div>
+                    <img id="1" src="img\Ukraine.jpg" alt="Beautiful sunrise at Carpathian Mountains" class="slidshow_image">
+                    <div class="description">Carpathian Mountains, Ukraine</div>
+                </div>
+                
+                <div class="slides_fade">
+                    <div class="image_number">2 / 10</div>
+                    <img id="2" src="img\Iceland.jpg" alt="Sunset from a few days back at Hvitserkur" class="slidshow_image">
+                    <div class="description">Hvitserkur, Iceland</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">3 / 10</div>
+                    <img id="3" src="img\Canada.jpg" alt="Spirit Island in Maligne Lake" class="slidshow_image">
+                    <div class="description">Maligne Lake, AB, Canada</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">4 / 10</div>
+                    <img id="4" src="img\Usa.jpg" alt="Yellow Tulips file in Usa" class="slidshow_image">
+                    <div class="description">Skagit Valley, WA, United states</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">5 / 10</div>
+                    <img id="5" src="img\Norway.jpg" alt="Epic distance of lake in Norway" class="slidshow_image">
+                    <div class="description">Reine Village, Lofoten Islands, Norway</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">6 / 10</div>
+                    <img id="6" src="img\Italy.jpg" alt="Beautiful CountrySide view in Italy" class="slidshow_image">
+                    <div class="description">San Quirico d Orcia , Tuscany, Italy</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">7 / 10</div>
+                    <img id="7" src="img\Vietnam.jpg" alt="Rice terraces on the mountain slope Vietnam" class="slidshow_image">
+                    <div class="description">Sapa, Vietnam</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">8 / 10</div>
+                    <img id="8" src="img\Indonesia.jpg" alt=" Coast at Uluwatu temple Indonesia" class="slidshow_image">
+                    <div class="description">Bali, Indonesia</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">9 / 10</div>
+                    <img id="9" src="img\Greece.jpg" alt=" Beautiful sea landscapes on Zakynthos Island" class="slidshow_image">
+                    <div class="description">Zakynthos Island, Greece</div>
+                </div>
+                <div class="slides_fade">
+                    <div class="image_number">10 / 10</div>
+                    <img id="10" src="img\France.jpg" alt="Mind Luring Aerial View from France" class="slidshow_image">
+                    <div class="description">Plougonvelin, France</div>
+                </div>
+                <!--Slide Buttons-->
+                <div class="button_container">
+                    <a class="prev" onclick="addSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="addSlides(1)">&#10095;</a>
+                </div>
+                <br />
+                <!--Position indicator-->
+                <div class="dot_container">
+                    <span class="dot" onclick="activeSlide(1)"></span>
+                    <span class="dot" onclick="activeSlide(2)"></span>
+                    <span class="dot" onclick="activeSlide(3)"></span>
+                    <span class="dot" onclick="activeSlide(4)"></span>
+                    <span class="dot" onclick="activeSlide(5)"></span>
+                    <span class="dot" onclick="activeSlide(6)"></span>
+                    <span class="dot" onclick="activeSlide(7)"></span>
+                    <span class="dot" onclick="activeSlide(8)"></span>
+                    <span class="dot" onclick="activeSlide(9)"></span>
+                    <span class="dot" onclick="activeSlide(10)"></span>
+                </div>
+                <p id="copyright">&copy;Parth Chandgadhiya</p>
+            </div>
+        </div>   
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Load Notify JS for Alert -->
+    <script type="text/javascript" src="js/notify.js"></script>
+    <!-- Load Application JS -->
+    <script type="text/javascript" src="js/application.js"></script>
+    </body>
+</html>
