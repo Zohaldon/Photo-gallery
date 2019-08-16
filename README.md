@@ -14,7 +14,7 @@ This project was java-script only.
 <img src="screenshot/4.PNG"> <br/>
 
 ## Image Added to Favourite list
-<img src="screenshot/3.PNG"> <br/>
+<img src="screenshot/3.png"> <br/>
 
 ## Mutiple Favourite 
 <img src="screenshot/5.PNG"> <br/>
